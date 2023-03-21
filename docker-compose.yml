@@ -1,0 +1,12 @@
+version: '0.0.8'
+services:
+  app:
+    container_name: node-nlp
+    image: node-nlp
+    build:
+      context: .
+    volumes:
+      - ./src:/app/src
+    platform: linux/amd64
+    ports:
+      - '8080:8080'
