@@ -3,7 +3,7 @@ import cors from 'cors';
 const app = express();
 import apiRoutes from './routes/index';
 import formData from 'express-form-data';
-const port = 8080;
+const port = 8081;
 
 const allowedOrigins = ['http://localhost:3000'];
 app.use(cors());
